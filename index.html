@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Creator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <header>
+        <div>
+            <h1 class="textHeader">Portfolio Creator</h1>
+            <p class="textHeader">Create Your Personal Portfolio</p>
+        </div>
+    </header>
+    <main>
+        <!-- <h2>Enter Your details.</h2> -->
+
+        <section class="pagesInputSection" id="homeInputSection">
+            <h3>Home Page</h3>
+            <div class="inputFields" id="homeInput">
+                <label for="greeting">Greeting : </label><br>
+                <input type="text" id="greeting" placeholder="Enter Greeting 'Hello'">
+                <hr>
+                <!-- <p class="exampleHelp">Like : "Hello, I'm", "Hii, I'm" , etc.</p>--><br>
+                <label for="userName">Name : </label><br>
+                <input type="text" id="userName" placeholder="Enter Your Name">
+                <hr>
+                <!-- <p class="exampleHelp">Like : Jhon Deo, Ram, Rohit, etc.</p><br> -->
+                <label for="profession_Role">Profession/Role : </label><br>
+                <input type="text" id="profession_Role" placeholder="Enter Your Profession/Role ">
+                <!-- <p class="exampleHelp">Like : Front-End developer · Backend Learner · Code | Build | Debug, Student, etc.</p>-->
+                <br>
+                <label for="tagLine">Tag Line : </label><br>
+                <input type="text" id="tagLine" placeholder="Enter Your Tag Line">
+                <hr>
+                <!-- <p class="exampleHelp">Like : Still learning, always building, Hello World! This is just the beginning, Young in the game, strong in the aim, etc.</p>-->
+                <br>
+                <label for="profilePicZone">Upload your Profile Here :</label><br>
+                <div class="drop-zone" id="profilePicZone">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="profilePicInput" accept="image/*" title="Image Input" class="none" />
+                    <img id="profilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section class="pagesInputSection" id="aboutMeInputSection">
+            <h3>About Me Page</h3>
+            <div class="inputFields" id="aboutMeInput">
+                <label for="introduction">Introduction : </label><br>
+                <textarea name="Introduction" id="introduction" cols="30" rows="5"
+                    placeholder="Write your Introduction..."></textarea><br>
+                <label for="education">Education : </label><br>
+                <textarea name="Education" id="education" cols="30" rows="5"
+                    placeholder="Write about your Education..."></textarea><br>
+                <label for="skillsExpertise">Skills & Expertise : </label><br>
+                <textarea name="Skills_Expertise" id="skillsExpertise" cols="30" rows="5"
+                    placeholder="Write about your Skills & Expertise..."></textarea><br>
+                <label for="experience_WorkHistory">Experience / Work History : </label><br>
+                <textarea name="Experience_WorkHistory" id="experience_WorkHistory" cols="30" rows="5"
+                    placeholder="Write about your Experience / Work History..."></textarea><br>
+                <label for="hobbies_Interests">Hobbies & Interests : </label><br>
+                <textarea name="Hobbies_Interests" id="hobbies_Interests" cols="30" rows="5"
+                    placeholder="Write about your Hobbies & Interests..."></textarea><br>
+                <label for="careerGoals_FutureVision">Career Goals / Future Vision : </label><br>
+                <textarea name="CareerGoals_FutureVision" id="careerGoals_FutureVision" cols="30" rows="5"
+                    placeholder="Write about your Career Goals / Future Vision..."></textarea><br>
+                <label for="whatYouAreCurrentlyDoing">What I'm Currently Doing : </label><br>
+                <textarea name="whatYouAreCurrentlyDoing" id="whatYouAreCurrentlyDoing" cols="30" rows="5"
+                    placeholder="Write about what you are currently doing..."></textarea><br>
+                <label for="profilePicZoneAboutMe">Upload your Profile Here :</label><br>
+                <div class="drop-zone" id="profilePicZoneAboutMe">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="aboutMeProfilePicInput" accept="image/*" title="Image Input" class="none" />
+                    <img id="aboutMeProfilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- Corrected Projects Section -->
+        <section class="pagesInputSection" id="projectInputSection">
+            <h3>Projects Page</h3>
+            <div class="inputFields" id="projectsInput">
+                <label for="typeOfProject1">What Type of Projects are:</label><br>
+                <input type="text" name="typeOfProject1" id="typeOfProject1"
+                    placeholder="Enter what type of Projects are "><br>
+
+                <div class="drop-zone" id="profilePicZoneProjects1_1">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="projects1_1ProfilePicInput" accept="image/*" title="Image Input"
+                        class="none" />
+                    <img id="projects1_1ProfilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+
+                <label for="typeOfProject1_projectLink1">Project 1 Link :</label><br>
+                <input type="text" name="typeOfProject1_projectLink1" id="typeOfProject1_projectLink1"
+                    placeholder="Enter Project 1 link"><br>
+
+                <label for="typeOfProject1_project1Name1">Project 1 Name :</label><br>
+                <input type="text" name="typeOfProject1_project1Name1" id="typeOfProject1_project1Name1"
+                    placeholder="Enter Project 1 Name"><br>
+
+                <div class="drop-zone" id="profilePicZoneProjects1_2">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="projects1_2ProfilePicInput" accept="image/*" title="Image Input"
+                        class="none" />
+                    <img id="projects1_2ProfilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+
+                <!-- FIXED: Remove line breaks and spaces in for, name, id, and placeholder -->
+                <label for="typeOfProject1_projectLink2">Project 2 Link :</label><br>
+                <input type="text" name="typeOfProject1_projectLink2" id="typeOfProject1_projectLink2"
+                    placeholder="Enter Project 2 link"><br>
+
+                <label for="typeOfProject1_project1Name2">Project 2 Name :</label><br>
+                <input type="text" name="typeOfProject1_project1Name2" id="typeOfProject1_project1Name2"
+                    placeholder="Enter Project 2 Name"><br>
+
+                <label for="typeOfProject2">What Type of Projects are:</label><br>
+                <input type="text" name="typeOfProject2" id="typeOfProject2"
+                    placeholder="Enter what type of Project are "><br>
+
+                <div class="drop-zone" id="profilePicZoneProjects2_1">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="projects2_1ProfilePicInput" accept="image/*" title="Image Input"
+                        class="none" />
+                    <img id="projects2_1ProfilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+
+                <label for="typeOfProject2_projectLink1">Project 1 Link :</label><br>
+                <input type="text" name="typeOfProject2_projectLink1" id="typeOfProject2_projectLink1"
+                    placeholder="Enter Project 1 link"><br>
+
+                <label for="typeOfProject2_project1Name1">Project 1 Name :</label><br>
+                <input type="text" name="typeOfProject2_project1Name1" id="typeOfProject2_project1Name1"
+                    placeholder="Enter Project 1 Name"><br>
+
+                <div class="drop-zone" id="profilePicZoneProjects2_2">
+                    Drag & Drop Profile Picture Here or Click
+                    <input type="file" id="projects2_2ProfilePicInput" accept="image/*" title="Image Input"
+                        class="none" />
+                    <img id="projects2_2ProfilePreview" alt="Profile Preview" class="preview-img" />
+                </div>
+
+                <!-- FIXED: Remove line breaks and spaces in for, name, id, and placeholder -->
+                <label for="typeOfProject2_projectLink2">Project 2 Link :</label><br>
+                <input type="text" name="typeOfProject2_projectLink2" id="typeOfProject2_projectLink2"
+                    placeholder="Enter Project 2 link"><br>
+
+                <label for="typeOfProject2_project1Name2">Project 2 Name :</label><br>
+                <input type="text" name="typeOfProject2_project1Name2" id="typeOfProject2_project1Name2"
+                    placeholder="Enter Project 2 Name"><br>
+            </div>
+        </section>
+
+
+        <section class="pagesInputSection" id="skillsInputSection">
+            <h3>Skils Page</h3>
+            <div class="inputFields" id="skillsInput">
+                <label for="h2_1">Main Heading Skill 1 : </label><br>
+                <input type="text" name="h2_1" id="h2_1" placeholder="Main Heading Skill 1"><br>
+
+                <label for="h2_1_p1">Sub Heading Skill 1 : </label><br>
+                <input type="text" name="h2_1_p1" id="h2_1_p1" placeholder="Sub Heading Skill 1"><br>
+
+                <label for="h2_1_p1_li1">Skill 1 : </label><br>
+                <input type="text" name="h2_1_p1_li1" id="h2_1_p1_li1" placeholder="Skill 1"><br>
+
+                <label for="h2_1_p1_li2">Skill 2 : </label><br>
+                <input type="text" name="h2_1_p1_li2" id="h2_1_p1_li2" placeholder="Skill 2"><br>
+
+                <label for="h2_1_p1_li3">Skill 3 : </label><br>
+                <input type="text" name="h2_1_p1_li3" id="h2_1_p1_li3" placeholder="Skill 3"><br>
+
+                <label for="h2_1_p1_li4">Skill 4 : </label><br>
+                <input type="text" name="h2_1_p1_li4" id="h2_1_p1_li4" placeholder="Skill 4"><br>
+
+                <label for="h2_1_p2">Sub Heading Skill 2 : </label><br>
+                <input type="text" name="h2_1_p2" id="h2_1_p2" placeholder="Sub Heading Skill 2"><br>
+
+                <label for="h2_1_p2_li1">Skill 1 : </label><br>
+                <input type="text" name="h2_1_p2_li1" id="h2_1_p2_li1" placeholder="Skill 1"><br>
+
+                <label for="h2_1_p2_li2">Skill 2 : </label><br>
+                <input type="text" name="h2_1_p2_li2" id="h2_1_p2_li2" placeholder="Skill 2"><br>
+
+                <label for="h2_1_p2_li3">Skill 3 : </label><br>
+                <input type="text" name="h2_1_p2_li3" id="h2_1_p2_li3" placeholder="Skill 3"><br>
+
+                <label for="h2_1_p3">Sub Heading Skill 3 : </label><br>
+                <input type="text" name="h2_1_p3" id="h2_1_p3" placeholder="Sub Heading Skill 3"><br>
+
+                <label for="h2_1_p3_li1">Skill 1 : </label><br>
+                <input type="text" name="h2_1_p3_li1" id="h2_1_p3_li1" placeholder="Skill 1"><br>
+
+                <label for="h2_1_p4">Sub Heading Skill 4 : </label><br>
+                <input type="text" name="h2_1_p4" id="h2_1_p4" placeholder="Sub Heading Skill 4"><br>
+
+                <label for="h2_1_p4_li1">Skill 1 : </label><br>
+                <input type="text" name="h2_1_p4_li1" id="h2_1_p4_li1" placeholder="Skill 1"><br>
+
+                <label for="h2_1_p4_li2">Skill 2 : </label><br>
+                <input type="text" name="h2_1_p4_li2" id="h2_1_p4_li2" placeholder="Skill 2"><br>
+
+                <label for="h2_1_p4_li3">Skill 3 : </label><br>
+                <input type="text" name="h2_1_p4_li3" id="h2_1_p4_li3" placeholder="Skill 3"><br>
+
+                <label for="h2_1_p4_li4">Skill 4 : </label><br>
+                <input type="text" name="h2_1_p4_li4" id="h2_1_p4_li4" placeholder="Skill 4"><br>
+
+                <label for="h2_2">Main Heading Skill 2 : </label><br>
+                <input type="text" name="h2_2" id="h2_2" placeholder="Main Heading Skill 2 "><br>
+
+                <label for="h2_2_li1">Skill 1 : </label><br>
+                <input type="text" name="h2_2_li1" id="h2_2_li1" placeholder="Skill 1"><br>
+
+                <label for="h2_2_li2">Skill 2 : </label><br>
+                <input type="text" name="h2_2_li2" id="h2_2_li2" placeholder="Skill 2"><br>
+
+                <label for="h2_2_li3">Skill 3 : </label><br>
+                <input type="text" name="h2_2_li3" id="h2_2_li3" placeholder="Skill 3"><br>
+
+
+                <h4>Soft Skills</h4>
+
+                <label for="softSkills_li1">Soft Skill 1 : </label><br>
+                <input type="text" name="softSkills_li1" id="softSkills_li1" placeholder="Soft Skill 1 "><br>
+
+                <label for="softSkills_li2">Soft Skill 2 : </label><br>
+                <input type="text" name="softSkills_li2" id="softSkills_li2" placeholder="Soft Skill 2 "><br>
+
+                <label for="softSkills_li3">Soft Skill 3 : </label><br>
+                <input type="text" name="softSkills_li3" id="softSkills_li3" placeholder="Soft Skill 3 "><br>
+
+                <label for="softSkills_li4">Soft Skill 4 : </label><br>
+                <input type="text" name="softSkills_li4" id="softSkills_li4" placeholder="Soft Skill 4 "><br>
+
+                <label for="softSkills_li5">Soft Skill 5 : </label><br>
+                <input type="text" name="softSkills_li5" id="softSkills_li5" placeholder="Soft Skill 5 "><br>
+
+                <h4>Current Learning</h4>
+
+                <label for="currentlyLearning_li1">Current Learning Skill 1 : </label><br>
+                <input type="text" name="currentlyLearning_li1" id="currentlyLearning_li1"
+                    placeholder="Current Learning Skill 1 "><br>
+
+                <label for="currentlyLearning_li2">Current Learning Skill 2 : </label><br>
+                <input type="text" name="currentlyLearning_li2" id="currentlyLearning_li2"
+                    placeholder="Current Learning Skill 2 "><br>
+
+                <label for="currentlyLearning_li3">Current Learning Skill 3 : </label><br>
+                <input type="text" name="currentlyLearning_li3" id="currentlyLearning_li3"
+                    placeholder="Current Learning Skill 3 "><br>
+
+                <label for="currentlyLearning_li4">Current Learning Skill 4 : </label><br>
+                <input type="text" name="currentlyLearning_li4" id="currentlyLearning_li4"
+                    placeholder="Current Learning Skill 4 "><br>
+
+            </div>
+        </section>
+
+        <section class="pagesInputSection" id="resumeInputSection">
+            <h3>Resume Page</h3>
+            <div class="inputFields" id="resumeInput">
+                <label for="current_role_occupation">Current role / occupation : </label><br>
+                <input type="text" name="current_role_occupation" id="current_role_occupation"
+                    placeholder="Enter Your current role / occupation"><br>
+
+                <label for="phoneNumber">Phone Number : </label><br>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number"><br>
+
+                <label for="emailAdd2">Email : </label><br>
+                <input type="text" name="emailAdd2" id="emailAdd2" placeholder="Enter Your Email "><br>
+
+                <label for="socialMedia1">Social Media Link 1 : </label><br>
+                <input type="text" name="socialMedia1" id="socialMedia1"
+                    placeholder="Enter Your Social Media Link 1"><br>
+
+                <label for="socialMedia2">Social Media Link 2 : </label><br>
+                <input type="text" name="socialMedia2" id="socialMedia2"
+                    placeholder="Enter Your Social Media Link 2"><br>
+
+                <label for="summary">Summary : </label><br>
+                <textarea name="summary" id="summary" cols="30" rows="5"
+                    placeholder="Enter Your Summary"></textarea><br>
+
+                <label for="hobbie1">Hobbie 1 : </label><br>
+                <input type="text" name="hobbie1" id="hobbie1" placeholder="Enter Your hobbie 1"><br>
+
+                <label for="hobbie2">Hobbie 2 : </label><br>
+                <input type="text" name="hobbie2" id="hobbie2" placeholder="Enter Your hobbie 2"><br>
+
+                <label for="hobbie3">Hobbie 3 : </label><br>
+                <input type="text" name="hobbie3" id="hobbie3" placeholder="Enter Your hobbie 3"><br>
+
+                <label for="language1">language 1 : </label><br>
+                <input type="text" name="language1" id="language1" placeholder="Enter Your language 1"><br>
+
+                <label for="language2">language 2 : </label><br>
+                <input type="text" name="language2" id="language2" placeholder="Enter Your language 2"><br>
+
+                <label for="careerObjective">Career Objective : </label><br>
+                <textarea name="careerObjective" id="careerObjective" cols="30" rows="5"
+                    placeholder="Enter Your Career Objective "></textarea><br>
+
+                <label for="courseName">Course Name : </label><br>
+                <input type="text" name="courseName" id="courseName" placeholder="Enter Your Course Name "><br>
+
+                <label for="collegeName_Year">College Name and Year : </label><br>
+                <input type="text" name="collegeName_Year" id="collegeName_Year"
+                    placeholder="Enter Your College Name with Year "><br>
+
+                <label for="skills">Skills : </label><br>
+                <input type="text" name="skills" id="skills" placeholder="Enter Your skills saperated by coma(,) "><br>
+
+                <label for="projectName1">Project 1 Name : </label><br>
+                <input type="text" name="projectName1" id="projectName1" placeholder="Enter Your project 1 Name "><br>
+
+                <label for="features1">Project 1 features : </label><br>
+                <input type="text" name="features1" id="features1" placeholder="Enter Your Project 1 features  "><br>
+
+                <label for="projectName2">Project 2 Name : </label><br>
+                <input type="text" name="projectName2" id="projectName2" placeholder="Enter Your project 2 Name "><br>
+
+                <label for="features2">Project 2 features : </label><br>
+                <input type="text" name="features2" id="features2" placeholder="Enter Your Project 2 features  "><br>
+            </div>
+        </section>
+
+
+        <section class="pagesInputSection" id="contactMeInputSection">
+            <h3>ContactMe Page</h3>
+
+            <h4>Create your Formspree acount to fill the input</h4>
+            <p>Steps to create the account and email link :</p>
+            <ol>
+                <li>Go to the <a href="https://formspree.io/"> "https://formspree.io/"</a></li>
+                <li>Now Cilik on Get started button on the top right or on the front page button.</li>
+                <li>Now fill all the details and register.</li>
+                <li>Now after registering the account Click on add new on the side menu and select New Form. </li>
+                <li>Now enter all the details and click on Create Form.</li>
+                <li>Now copy the link you see on the Form endpoint.</li>
+                <li>Now enter the link on the first input of Contact Me page in portfolio Creator.</li>
+
+            </ol>
+            <p>You will get all the form on your email or on the website of Formspree</p>
+            <div class="inputFields" id="contactMeInput">
+
+                <label for="formspreeEmailLink">Formspree Email Link :</label><br>
+                <input type="text" name="formspreeEmailLink" id="formspreeEmailLink"
+                    placeholder="Enter your Formspree Email Link"><br>
+                <p>Like : https://formspree.io/f/asdf (Enter Your Link)</p>
+                <br>
+                <label for="emailAdd">Email Address :</label><br>
+                <input type="text" name="emailAdd" id="emailAdd" placeholder="Enter Your Email Address"><br>
+                <p>Like : abcd123@Domain.com</p>
+                <br>
+                <label for="socialMediaLink1">Social Media Link1</label>
+                <input type="text" name="socialMediaLink1" id="socialMediaLink1"
+                    placeholder="Enter Your Social Media Link1">
+                <p>Like : GitHub, X, LinkedIn, etc.</p>
+
+                <label for="profileName1">profile Name1</label><br>
+                <input type="text" name="profileName1" id="profileName1" placeholder="Enter Your profile Name1"><br>
+                <p>Like : abcd_22, rohitK23, Jainy_me, etc.</p><br>
+
+                <label for="socialMediaLink2">Social Media Link2</label><br>
+                <input type="text" name="socialMediaLink2" id="socialMediaLink2"
+                    placeholder="Enter Your Social Media Link2"><br>
+                <p>Like : GitHub, X, LinkedIn, etc.</p><br>
+
+                <label for="profileName2">profile Name2</label><br>
+                <input type="text" name="profileName2" id="profileName2" placeholder="Enter Your profile Name1"><br>
+                <p>Like : abcd_22, rohitK23, Jainy_me, etc.</p><br>
+
+                <label for="socialMediaLink3">Social Media Link3</label><br>
+                <input type="text" name="socialMediaLink3" id="socialMediaLink3"
+                    placeholder="Enter Your Social Media Link3"><br>
+                <p>Like : GitHub, X, LinkedIn, etc.</p>
+                <br>
+                <label for="profileName3">profile Name3</label><br>
+                <input type="text" name="profileName3" id="profileName3" placeholder="Enter Your profile Name1"><br>
+                <p>Like : abcd_22, rohitK23, Jainy_me, etc.</p><br>
+
+            </div>
+        </section>
+
+
+        <button onclick="generatePortfolio()">Generate</button>
+        <button onclick="createPortfolioZIP()">Download</button>
+        <section>
+            <h3>Preview</h3>
+            Home Page
+            <iframe id="previewFrame" title="previewFrame"></iframe>
+            About Me Page
+            <iframe id="previewFrameAboutMe" title="previewFrameAboutMe"></iframe>
+            Projects Page
+            <iframe id="previewFrameProjects" title="previewFrameProjects"></iframe>
+
+            Skills Page
+            <iframe id="previewFrameSkills" title="previewFrameSkills"></iframe>
+            Resume Page
+            <iframe id="previewFrameResume" title="previewFrameResume"></iframe>
+
+            Contact Me Page
+            <iframe id="previewFrameContactMe" title="previewFrameContactMe"></iframe>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</body>
+
+</html>
